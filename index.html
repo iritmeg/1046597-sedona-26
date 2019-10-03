@@ -3,20 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="css-sedona.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet"> 
 </head>
 <body>
 
-	<header>
+	<header class="header">
 		<h1 class="visually-hidden"> Город Седона для туристов </h1>
-		<img src="img/logo.svg" width="137" height="70" alt="Логотип Седона"> 
+		<img class="main-nav-logo" src="img/logo.svg" width="137" height="70" alt="Логотип Седона"> 
 
-		<nav>
-			<ul> 
-				<li> <a href="info.html"> Информация  </a>  </li> 
-				<li> <a href="foto.html"> Фото и видео  </a> </li>
-				<li> <a href="#map"> Карта штата </a> </li>
-				<li> <a href="catalog.html"> Гостиницы  </a>  </li>
+		<nav class="main-nav">
+			<ul class="nav-list"> 
+				<li class="nav-item"> <a href="info.html"> Информация  </a>  </li> 
+				<li class="nav-item"> <a href="foto.html"> Фото и видео  </a> </li>
+				<li class="nav-item"> <a href="#map"> Карта штата </a> </li>
+				<li class="nav-item"> <a href="catalog.html"> Гостиницы  </a>  </li>
 			</ul>
 
 		</nav>
@@ -24,78 +25,105 @@
 	</header>
 
 
+
+
 	<main>
 
 		<section>
-			<div>
+			<div class="welcome">
 				<!-- тут background-->
-				<img src="img/welcome.svg" width="459" height="353"  alt="Приветственый текст сайта">
+				<img class="welcome-text" src="img/welcome.svg" width="459" height="353"  alt="Приветственый текст сайта">
+				<div class="polygon"></div>
 
 			</div>
 
-
-
-			<h1>Седона- небольшой городок в Аризоне,  Заслужеваюший большего! </h1>
-			<p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			<div class="welcome-title">
+			<h1 class="title">Седона - небольшой городок в Аризоне,<br>  Заслужеваюший большего! </h1>
+			<p class="reasons"> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			</div>
+			
 		</section>
 
 
-		<section>
-			<ul>
-				<li> 
-					<h2>  Настояший городок </h2>
+
+
+		<section class="index-colums" >
+			<ul class="reason-forstay-list wrap">
+				<li class="reason-forstay blue "> 
+				<div class="reason-wrapper">
+					<h2 >  Настояший городок </h2>
 					<span> &Nu; 1 </span>
 					<p> Седона не атракцион для туристов, там течет своя жизнь </p>
+				</div>
+				<div class="foto-wrapper">
 					<img src="img/foto-goroda.jpg" width="800" height="256" alt="Фото Города"> 
+				</div>
 				</li>
+		
 
 
 
-				<li>	 
-					<h2> Там есть мост дьявола </h2>
+		
+				<li class="reason-forstay blue ">
+				<div class="reason-wrapper">	 
+					<h2 > Там есть мост дьявола </h2>
 					<span> &Nu; 2 </span>
 					<p> Да,по нему можно пройти! Если конечно вы осмелитесь </p>
+				</div>
+					<div class="foto-wrapper">
 					<img src="img/foto-mosta.jpg" width="800" height="256" alt="Фото Моста">
+				</div>
 				</li>
 
-
-				<li>  
-					<h2 class="visually-hidden"> Преимушества поездки </h2>		    
-					<h3> Небольшая плошадь </h3>
+			
+					
+				<li class="reason-forstay grey " > 
+					<h3 > Небольшая плошадь </h3>
 					<span> &Nu; 3 </span>
 					<p> Все достопримечательности находятся очень близко</p>
 				</li>
-
-				<li>
+			
+				
+				<li class="reason-forstay grey ">
+					
 					<h3> Красивая дорога </h3>
 					<span> &Nu; 4 </span>
 					<p>Ехать в Седона из Лас-Вегаса совсем не скучно </p>
+				
 				</li>
-
-				<li> 
+			
+				
+				<li class="reason-forstay grey "> 
+					
 					<h3> Мало туристов </h3>
 					<span> &Nu; 5</span>
 					<p> Большинство едит в Гранд Каньон и толпится там</p>
+				
 				</li>
+			
 			</ul>
 
 		</section>
 
 
 
-		<article>
+		<article class="advantages">
 
-			<h2 class="visually-hidden"> Достоинства города </h2>
-			<ul>
+			<h2 class="visually-hidden"> Преимушества города </h2>
+			<ul class="advantages-list">
+
 				<li>
+					<div class="bg-living"> </div>
 					<h3> Жилье </h3>
 					<p> Рекомендуем пожить в настояшем отеле, все как в кино!</p>
 				</li>
 				<li>
+					<div class="bg-eat"> </div>
 					<h3> Еда </h3>
 					<p> всегда заказывайте фирменый бургер, вы не разочаруетесь!</p>
 				</li>
 				<li> 
+					<div class="bg-presents"> </div>
 					<h3> Сувениры </h3>
 					<p> Не только китайского, но местного производства</p>
 				</li>
@@ -107,66 +135,87 @@
 
 
 
-		<section>
+		<section class="best-deals-forstay">
 
 			<h2>Заинтересовались?</h2> 
 			<p> Укажите предпологаемые даты поездки<br>
 				И мы покажем вам лучшее предложения гостиниц в Седона
 			</p> 
 
-			<img id="map" src="img/map.jpg" width="1200"  height="593" alt="Изображение местонахождения города Седона на карте">
+			<img class="sedona-bymap" id="map" src="img/map.jpg" width="100%"  height="593" alt="Изображение местонахождения города Седона на карте">
+
+	
+		<div class="search-wrapper">
+			<div class="search">
+				<p class="hotel-search">Поиск гостиницы в Седоне </p>
+
+				<form class="form" action="https://htmlacademy.ru" method="post">
+					<div class="form-line">
+						<label  class="info" for="new-date"> Дата заезда </label>
+						<input  class="text" type="text" name="date-in" id="new-date" placeholder="24 апреля 2017">
+					</div>
+
+					<div class="form-line">
+						<label class="info" for="new-date1"> Дата выезда </label>
+						<input class="text" type="text" name="date-out" id="new-date1" placeholder="4 июля 2017">
+					</div>
+
+						
+					<label class="info" for="new-adults"> Взрослые </label>
+					<input type="age" name="adults" id="new-adults" placeholder=" 2 ">
+					
 
 
-			<div>
-				<p>Поиск гостиниц в Седона</p>
 
-				<form action="https://htmlacademy.ru" method="post">
-					<label for="new-date"> Дата заезда </label>
-					<input type="text" name="date-in" id="new-date" placeholder="24 апреля 2017">
+					<label class="info" for="new-child"> Дети </label>
+					<input class="age" type="text" name="child" id="new-child" placeholder="  0  ">
 
-
-					<label for="new-date1"> Дата выезда </label>
-					<input type="text" name="date-out" id="new-date1" placeholder="4 июля 2017">
-
-
-					<label for="new-adults"> Взрослые </label>
-					<input type="text" name="adults" id="new-adults" placeholder=" 2  ">
-
-
-					<label for="new-child"> Дети </label>
-					<input type="text" name="child" id="new-child" placeholder="  0  ">
-
-
-					<button type="submit"> Найти </button>
+					<div>
+					<button class="submit-button" type="submit"> Найти </button>
+					</div>
 
 
 				</form>
 
 
 			</div>
+		</div>
 
 		</section>
+
 
 	</main>
 
 
 
-	<footer>
 
-		<a href="#"> #VisitSedona </a>  
 
-		<div>
-			<ul>
-				<li> <a href="#" aria-label="ссылка на сайт Твитер"> <img src="img/t.svg" width="46" height="48" alt="Логотип сайта Твитер"> </a>  </li> 
-				<li> <a href="#" aria-label="ссылка на сайт Фейсбук"> <img src="img/fb-icon.svg" width="46" height="48" alt="Логотип сайта Фейсбук"> </a>  </li> 
-				<li> <a href="#" aria-label="ссылка на сайт Ютуб"> <img src="img/youtube.svg" width="46" height="48" alt="Логотип сайта Ютуб"> </a>  </li> 
+
+	<footer class="foter">
+	<div class="visit">
+		<a class="visit-sedona" href="#"> #VisitSedona </a>  
+	</div>
+
+		<div >
+			<ul class="social-button">
+				<li class="button"> <a href="#" aria-label="ссылка на сайт Твитер"> <img class="logo-social" src ="img/t.svg" width="17" height="15" alt="Логотип сайта Твитер"> </a>  </li> 
+				<li class="button"> <a href="#" aria-label="ссылка на сайт Фейсбук"> <img class="logo-social" src ="img/fb-icon.svg" width="17" height="15" alt="Логотип сайта Фейсбук"> </a>  </li> 
+				<li class="button"> <a href="#" aria-label="ссылка на сайт Ютуб"> <img  class="logo-social" src ="img/youtube.svg" width="17" height="15" alt="Логотип сайта Ютуб"> </a>  </li> 
 			</ul>
 		</div>
 
-		<p> WEBSITE BY</p>
-		<a href="#" aria-lebel="ссылка на сайт Хтмл академии"> 
+
+
+		<div class="academy">
+			<div>
+		<p class="reference"> WEBSITE BY</p>
+			</div>
+		<div>
+		<a class="link-academy" href="#" aria-lebel="ссылка на сайт Хтмл академии"> 
 			<img src="img/logo_name.png" width="115" height="41" alt="Логотип HTML Academy"> 	
 		</a>
+		</div>
+	</div>
 
 	</footer>
 

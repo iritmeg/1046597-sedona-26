@@ -1,0 +1,364 @@
+body {
+	padding: 0;
+	margin: 0; 
+
+font-family: "PT Sans","Arial", sans-serif;
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+line-height: 21px;
+color:#333333;
+
+background-color: #ffffff;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+ul,li {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+.visually-hidden {
+	visibility: hidden;
+
+}
+
+a { 
+	text-decoration: none;
+}
+
+
+
+.nav-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-item {
+	width: 239px;
+	height: 56px;
+
+
+}
+.nav-item a{
+	color: #000000;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+
+}
+
+.welcome {
+	background-image: url("img/background photo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-top: 52px;
+}
+
+.welcome-title { 
+	text-align: center;
+
+}
+
+
+.polygon {
+	height:59px;
+	background-image: url("img/polygon.png");
+	background-size: cover;
+}
+
+/*5 prichin*/
+
+.title {
+	color: #000000;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	
+}
+
+
+
+
+
+.reasons {
+	line-height: 26px;
+
+}
+
+
+/*spisok 5 prichin*/
+
+/* flex*/
+
+ .reason-forstay.blue { 
+	background-repeat: no-repeat;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+ .reason-forstay.grey {
+	width: 400px;
+	background-color: #eeeeee;
+	background-size: 1200px 256px;
+	background-repeat: no-repeat;
+	text-align: center;
+	width: 400px;
+
+}
+
+
+
+
+.reason-forstay-list {
+	list-style: none;
+	display: flex;
+	
+}
+
+
+
+.wrap{
+ 	flex-wrap: wrap;
+
+}
+
+
+.reason-wrapper {
+	width: 400px;
+	text-align: center;
+	padding-bottom: 100px;
+	background-color:#81b3d2;
+	background-size: 400px 256px;
+
+}
+
+.advantages-list {
+	display: flex;
+	list-style: none;
+
+}
+
+
+.foto-wrapper {
+	width: 800px;
+}
+
+
+
+.reason-forstay-list h2 {
+	font-size: 21px;
+	font-weight: 700;
+
+
+}
+.advantages-list h3,
+.reason-forstay-list h3 {
+	line-height: 21px;
+	font-size: 21px;
+	font-weight: 700;
+	text-align: center;
+
+} 
+
+/* acticle advantages*/
+
+.bg-living {
+	width: 75px;
+	height: 72px; 
+	background-image:url("img/icon-1.svg");
+	background-repeat: no-repeat;
+
+}
+
+.bg-eat {
+	width: 74px;
+	height: 70px; 
+	background-image:url("img/icon-2.svg");
+	background-repeat: no-repeat;
+}
+
+
+.bg-presents {
+	width: 64px;
+	height: 76px; 
+	background-image:url("img/icon-3.svg");
+	background-repeat: no-repeat;
+}
+
+.advantages-list div {
+	margin: 0px auto;
+
+}
+
+
+.advantages-list li {
+	padding:0px 72px;
+	text-align: center;
+}
+
+
+
+
+
+/* zainteresovalis*/
+
+.best-deals-forstay {
+	position: relative;
+	text-align: center;
+}
+
+.best-deals-forstay h2 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	
+}
+
+.sedona-bymap {
+	padding-top:130px;
+}
+
+/* poisk*/
+
+.search-wrapper {
+	position: absolute;
+	top:133px;
+	left:0px;
+	width: 100%;
+
+
+
+}
+.search {
+	width: 568px;
+	height: 480px;
+	background-color: yellow;
+	margin: 0px auto;
+
+}
+
+.form-line {
+	display: flex;
+	justify-content:center;
+	padding-left:25px;
+	padding-top: 25px;
+
+}
+
+
+.hotel-search {
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	padding-top:15px;  
+	padding-bottom: 33px;
+	text-align: center;
+	background-color:#766357;
+
+
+}
+
+.info {
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #000000;
+	
+}
+
+.text {
+	width: 346px;
+	height: 38px;
+	background-color: #f2f2f2;
+
+}
+
+.submit-button {
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	background-color: #81b3d2;
+	padding: 5px 120px;
+}
+
+
+
+
+
+/* footer*/
+footer {
+	background-color: #f4f2ef;
+
+}
+
+.foter {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+
+
+footer .visit-sedona {
+	color: #000000;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+
+}
+
+.social-button {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+
+
+
+
+}
+
+.visit {
+	padding-top: 51px;
+}
+
+
+
+.button {
+	width: 60px;
+	padding-top: 35px;
+
+}
+
+.button .logo-social{
+	background-color:#81b3d2;
+	padding: 17px 15px;
+
+}
+
+.reference {
+	line-height: 26px;
+	color: #000000;
+	text-transform: uppercase;	
+	padding-right: 8px;
+}
+
+.academy {
+	display: flex;
+	padding-top:35px;
+
+}
