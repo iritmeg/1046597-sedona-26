@@ -65,6 +65,8 @@ a {
 .nav-item {
 	width: 239px;
 	height: 56px;
+	background-color: yellow;
+	
 
 }
 
@@ -454,12 +456,15 @@ footer .visit-sedona {
 	background-repeat:no-repeat;
 	background-size: 1200px 800px;
 	background-position: center;
-	display: flex;
-	padding-left: 24px;
-	
-
-
+	display: flex;	
 }
+
+
+
+.hotels-list-items {
+	padding: 60px;
+}
+
 
 .list-filters-checkboxes {
 	list-style: none;
@@ -467,7 +472,7 @@ footer .visit-sedona {
 }
 
 .list-filters-checkboxes li {
-	padding: 15px 0px;
+	padding: 9px 0px;
 }
 
 
@@ -488,12 +493,19 @@ footer .visit-sedona {
 
 .hotels-list {
 	list-style: none;
-	margin-left: 60px;
+	margin:0px;
 }
 
+.hotel-wrapper li {
+	border-top: 1px solid grey;
+
+}
+
+.hotels-list-items.last {
+	border-bottom:1px solid grey;
 
 
-
+}
 
 
 .legend {
@@ -505,6 +517,7 @@ footer .visit-sedona {
 .section-prices {
 	color: #ffffff;
 	margin-left: 400px;
+	padding-right:70px;
 
 }
 
@@ -575,7 +588,7 @@ footer .visit-sedona {
 	justify-content: space-between;
 	width: 400px;
 	padding-top: 25px;
-	margin-left: 60px;
+	margin-left: 34px;
 
 }
 
@@ -664,12 +677,34 @@ footer .visit-sedona {
 
 
 .marks{
-	margin-left: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-left: 576px;
+	
+	
 }
 
 
 
+.results-arrow {
+	border: none;
+	background-color: transparent;
+	padding-left: 0px;
+	
 
+}
+
+.first {
+	margin:1px;
+}
+
+.result-arrow-wrapper {
+	display: flex;
+	width: 509px;
+	justify-content: flex-end;
+
+}
 
 .rating {
 	height: 27px;
@@ -678,6 +713,7 @@ footer .visit-sedona {
 	color: #666666;
 	line-height: 21px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 
