@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
-	<link rel="stylesheet" type="text/css" href="css/css-sedona.css">
+	<link rel="stylesheet" type="text/css" href="css/css-sedona.min.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet"> 
 </head>
+
 <body>
 	<header class="header">
 		<h1 class="visually-hidden"> Город Седона для туристов </h1>
@@ -18,33 +19,19 @@
 				<li class="nav-item nav-item-map"> <a href="#map"> Карта штата </a> </li>
 				<li class="nav-item nav-item-hotels"> <a href="catalog.html"> Гостиницы  </a>  </li>
 			</ul>
-
 		</nav>
-
 	</header>
-
-
-
 	<div class="all">
 		<main class="main">
-
 			<section>
 				<div class="welcome">
 					<img class="welcome-text" src="img/welcome1.svg" width="459" height="353"  alt="Приветственый текст сайта">
-					<div class="polygon"></div>
-
 				</div>
-
 				<div class="welcome-title">
 					<h2 class="title">Седона - небольшой городок в Аризоне, Заслужеваюший большего! </h2>
 					<p class="reasons"> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 				</div>
-
 			</section>
-
-
-
-
 			<section class="index-colums" >
 				<ul class="reason-forstay-list wrap">
 					<li class="reason-forstay blue "> 
@@ -57,10 +44,7 @@
 						<div class="foto-wrapper">
 							<img src="img/foto-goroda.jpg" width="800" height="256" alt="Фото Города"> 
 						</div>
-
-
 						<article class="advantages">
-
 							<h2 class="visually-hidden"> Преимушества города </h2>
 							<ul class="advantages-list">
 								<li>
@@ -68,31 +52,22 @@
 									<h3> Жилье </h3>
 									<p> Рекомендуем пожить в настояшем мотеле, все как в кино!</p>
 								</li>
-
 								<li>
 									<div class="advantages-list-icon background-eat"> </div>
 									<h3> Еда </h3>
 									<p> всегда заказывайте фирменый бургер,  вы не разочаруетесь!</p>
 								</li>
-
 								<li> 
 									<div class="advantages-list-icon background-presents"> </div>
 									<h3> Сувениры </h3>
 									<p> Не только китайского, но местного производства</p>
 								</li>
 							</ul>
-
 						</article>
-
 					</li>
-
-
-
-
-
 					<li class="reason-forstay blue ">
 						<div class="reason-wrapper second">	 
-							<h2 > Там есть мост дьявола </h2>
+							<h2 > Там есть<br> мост дьявола </h2>
 							<span> - &Nu; 2 - </span>
 							<p class="reason-text second"> Да,по нему можно пройти! Если конечно вы осмелитесь </p>
 						</div>
@@ -100,60 +75,37 @@
 							<img src="img/foto-mosta.jpg" width="800" height="256" alt="Фото Моста">
 						</div>
 					</li>
-
-
-
-					<li class="reason-forstay grey " > 
+					<li class="reason-forstay grey "> 
 						<h3 > Небольшая плошадь </h3>
 						<span> -  &Nu; 3 - </span>
 						<p> Все достопримечательности находятся очень близко</p>
 					</li>
-
-
 					<li class="reason-forstay grey ">
-
 						<h3> Красивая дорога </h3>
 						<span> -  &Nu; 4 - </span>
 						<p>Ехать в Седона из Лас-Вегаса совсем не скучно </p>
-
 					</li>
-
-
 					<li class="reason-forstay grey "> 
-
 						<h3> Мало туристов </h3>
 						<span> - &Nu; 5 - </span>
 						<p> Большинство едит в Гранд Каньон и толпится там</p>
-
 					</li>
-
 				</ul>
-
 			</section>
-
-
-
-
-
-
 			<section class="best-deals-forstay">
 				<h2>Заинтересовались?</h2> 
 				<p> Укажите предпологаемые даты поездки,</p>
 				<p>И мы покажем вам лучшее предложения гостиниц в Седона </p>
-				<img class="sedona-bymap" id="map" src="img/map.jpg" width="1200"  height="593" alt="Изображение местонахождения города Седона на карте">
-
-
+				
+				<iframe  class="sedona-bymap" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25444.611266839307!2d-111.803620386369!3d34.86168686066567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sil!4v1572610570683!5m2!1sen!2sil" width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 				<div class="search-wrapper">
 					<div class="search">
-						<p class="hotel-search">Поиск гостиницы в Седоне </p>
-
+						<button class="hotel-search" type="button"> Поиск гостиницы в Седоне </button> 
 						<form class="form" action="https://htmlacademy.ru" method="post">
-
 							<div class="form-line form-line1">
 								<label class="info" for="new-date"> Дата заезда: </label>
 								<input  class="text" type="text" name="date-in" id="new-date" value="24 апреля 2017">
-								<button class="calendar">
-
+								<button aria-label="Календарь" class="calendar">
 									<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 									<g >
@@ -177,11 +129,10 @@
 								</svg>
 							</button>
 						</div>
-
 						<div class="form-line form-line2">
 							<label class="info" for="new-date1"> Дата выезда: </label>
 							<input class="text" type="text" name="date-out" id="new-date1" value="4 июля 2017">
-							<button class="calendar"> 
+							<button aria-label="Календарь" class="calendar"> 
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 								<g>
@@ -205,43 +156,25 @@
 							</svg>
 						</button>
 					</div>
-
 					<div class="form-line form-line3">	
 						<label class="info" for="new-adults"> Взрослые: </label>
-
-						<button class="form-small-button" > - </button>
+						<button aria-label="Минус" class="form-small-button" > - </button>
 						<input class="age" type="text" name="adults" id="new-adults" value ="2">
-						<button class="form-small-button"> + </button>
-
-
+						<button aria-label="Плюс" class="form-small-button"> + </button>
 						<label class="info-age-child" for="new-child"> Дети: </label>
-
-						<button class="form-small-button"> - </button>
+						<button aria-label="Минус" class="form-small-button"> - </button>
 						<input class="age" type="text" name="child" id="new-child" value="0">
-						<button class="form-small-button"> + </button>
+						<button aria-label="Плюс"class="form-small-button"> + </button>
 					</div>	
-
-
-
-
 					<div>
 						<button class="submit-button" type="submit"> Найти </button>
 					</div>
-
-
 				</form>
-
-
 			</div>
 		</div>
-
 	</section>
-
-
 </main>
-
 </div>
-
 
 
 <div class="footer-wrapper index">
@@ -250,28 +183,31 @@
 			<a class="visit-sedona" href="#"> #VisitSedona </a>  
 		</div>
 
-		<ul class="social-button">
-			<li class="button"> <a href="#" aria-label="ссылка на сайт Твитер"> <img class="logo-social" src ="img/t1.svg" width="17" height="15" alt="Логотип сайта Твитер"> </a>  </li> 
-			<li class="button"> <a href="#" aria-label="ссылка на сайт Фейсбук"> <img class="logo-social" src ="img/fb-icon1.svg" width="12" height="22" alt="Логотип сайта Фейсбук"> </a>  </li> 
-			<li class="button"> <a href="#" aria-label="ссылка на сайт Ютуб"> <img  class="logo-social" src ="img/youtube1.svg" width="20" height="16" alt="Логотип сайта Ютуб"> </a>  </li> 
-		</ul>
+		<div class="social-button-wrapper">
+			<ul class="social-button">
+				<li class="button"> <a href="#" aria-label="ссылка на сайт Твитер"> <img class="logo-social" src ="img/t1.svg" width="17" height="15" alt="Логотип сайта Твитер"> </a>  
+				</li> 
+				<li class="button"> <a href="#" aria-label="ссылка на сайт Фейсбук"> <img class="logo-social" src ="img/fb-icon1.svg" width="12" height="22" alt="Логотип сайта Фейсбук"> </a>  
+				</li> 
+				<li class="button"> <a href="#" aria-label="ссылка на сайт Ютуб"> <img  class="logo-social" src ="img/youtube1.svg" width="20" height="16" alt="Логотип сайта Ютуб"> </a>  
+				</li> 
+			</ul>
+		</div>
 		
-
 		<div class="academy">
-			<div>
+			<div class="reference-wrapper">
 				<p class="reference"> WEBSITE BY</p>
 			</div>
-			<div>
-				<a class="link-academy" href="#"> 
+			<div class="link-academy-wrapper">
+				<a aria-label="Линк Академии" class="link-academy" href="https://htmlacademy.ru/intensive/htmlcss"> 
 					<img src="img/logo_name.svg" width="115" height="41" alt="Логотип HTML Academy"> 	
 				</a>
 			</div>
 		</div>
-
 	</footer>
-
 </div>
 
+<script src="js/code.min.js"> </script>
 </body>
 </html>
 
