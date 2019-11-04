@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/css-sedona.min.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet"> 
 </head>
-
 <body>
 	<header class="header">
 		<h1 class="visually-hidden"> Город Седона для туристов </h1>
@@ -14,7 +14,7 @@
 
 		<nav class="main-nav">
 			<ul class="nav-list"> 
-				<li class="nav-item nav-item-info"> <a href="#"> Информация  </a>  </li> 
+				<li class="nav-item nav-item-info selected"> <a href="#"> Информация  </a>  </li> 
 				<li class="nav-item nav-item-photo"> <a href="#"> Фото и видео  </a> </li>
 				<li class="nav-item nav-item-map"> <a href="#map"> Карта штата </a> </li>
 				<li class="nav-item nav-item-hotels"> <a href="catalog.html"> Гостиницы  </a>  </li>
@@ -47,18 +47,18 @@
 						<article class="advantages">
 							<h2 class="visually-hidden"> Преимушества города </h2>
 							<ul class="advantages-list">
-								<li>
-									<div class="advantages-list-icon background-living"> </div>
+								<li class="item-living">
+									
 									<h3> Жилье </h3>
 									<p> Рекомендуем пожить в настояшем мотеле, все как в кино!</p>
 								</li>
-								<li>
-									<div class="advantages-list-icon background-eat"> </div>
+								<li class="item-eating">
+									
 									<h3> Еда </h3>
 									<p> всегда заказывайте фирменый бургер,  вы не разочаруетесь!</p>
 								</li>
-								<li> 
-									<div class="advantages-list-icon background-presents"> </div>
+								<li class="item-presents">
+									
 									<h3> Сувениры </h3>
 									<p> Не только китайского, но местного производства</p>
 								</li>
@@ -96,15 +96,14 @@
 				<h2>Заинтересовались?</h2> 
 				<p> Укажите предпологаемые даты поездки,</p>
 				<p>И мы покажем вам лучшее предложения гостиниц в Седона </p>
-				
 				<iframe  class="sedona-bymap" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25444.611266839307!2d-111.803620386369!3d34.86168686066567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sil!4v1572610570683!5m2!1sen!2sil" width="1200" height="593" style="border:0;" allowfullscreen=""></iframe>
 				<div class="search-wrapper">
 					<div class="search">
 						<button class="hotel-search" type="button"> Поиск гостиницы в Седоне </button> 
 						<form class="form" action="https://htmlacademy.ru" method="post">
 							<div class="form-line form-line1">
-								<label class="info" for="new-date"> Дата заезда: </label>
-								<input  class="text" type="text" name="date-in" id="new-date" value="24 апреля 2017">
+								<label class="info" for="new-date"> Дата заезда:</label>
+								<input  class="text arrival-date" type="text" name="date-in" id="new-date" value="24 апреля 2017">
 								<button aria-label="Календарь" class="calendar">
 									<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -131,7 +130,7 @@
 						</div>
 						<div class="form-line form-line2">
 							<label class="info" for="new-date1"> Дата выезда: </label>
-							<input class="text" type="text" name="date-out" id="new-date1" value="4 июля 2017">
+							<input class="text departure-date" type="text" name="date-out" id="new-date1" value="4 июля 2017">
 							<button aria-label="Календарь" class="calendar"> 
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -175,8 +174,6 @@
 	</section>
 </main>
 </div>
-
-
 <div class="footer-wrapper index">
 	<footer class="footer index">
 		<div class="visit">
@@ -193,7 +190,6 @@
 				</li> 
 			</ul>
 		</div>
-		
 		<div class="academy">
 			<div class="reference-wrapper">
 				<p class="reference"> WEBSITE BY</p>

@@ -15,7 +15,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-
 ul,li {
 	margin: 0px;
 	padding: 0px;
@@ -46,7 +45,6 @@ a {
 	background-color: #ffffff;
 	box-shadow: 0px 10px 10px #888888;	
 }
-
 
 .main-nav-logo {
 	position: absolute;
@@ -87,7 +85,7 @@ a {
 	color:#ababab;
 }
 
-.nav-item-info a{
+.selected a{
 	color: #9a8c83;
 }
 
@@ -98,7 +96,7 @@ a {
 .welcome {
 	background-image: url("../img/background photo.jpg");
 	background-repeat: no-repeat;
-	background-color:#ffffff;
+	background-color:#4e7ea5;
 	background-position: center -12px;
 	background-size: cover;
 	text-align: center;
@@ -175,10 +173,8 @@ a {
 	display: flex;	
 }
 
-
 .wrap{
 	flex-wrap: wrap;
-
 }
 
 .reason-wrapper {
@@ -200,7 +196,6 @@ a {
 .reason-forstay span {
 	display: block;
 	padding-top: 24px;
-
 }
 
 .reason-forstay p {
@@ -249,38 +244,38 @@ a {
 	justify-content: space-around;
 }
 
+.advantages-list li::before {
+	display: block;
+	content: "";
+	width: 120px;
+	height: 110px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center 15px;
+}
+
+.item-living::before {
+	background-image:url("../img/icon1-1.svg");
+	background-position: center 21px;
+}
+
+.item-eating::before {
+	background-image:url("../img/icon1-3.svg");
+	background-position: center 21px;
+}
+
+
+.item-presents::before {
+	background-image:url("../img/icon1-2.svg");
+	background-position: center 16px;
+}
+
 .advantages-list h3 {
 	line-height: 21px;
 	font-size: 21px;
 	font-weight: 700;
 	text-align: center;
 	margin-top:12px;
-}
-
-.advantages-list-icon {
-	width: 120px;
-	height: 110px; 
-	background-repeat: no-repeat;
-	background-position: center 15px;
-}
-
-.background-living {
-	background-image:url("../img/icon1-1.svg");
-	background-position: center 21px;
-
-
-}
-
-.background-eat {	 
-	background-image:url("../img/icon1-3.svg");
-	background-position: center 21px;
-	
-}
-
-.background-presents { 
-	background-image:url("../img/icon1-2.svg");
-	background-position: center 16px;
-	
 }
 
 .advantages {
@@ -350,14 +345,58 @@ a {
 	height: 85px;
 }
 
+@keyframes bounce {
+	0% {
+		transform: translateX(0px);
+		timing-function: ease-in;
+	}
+	37% {
+		transform: translateX(5px);
+		timing-function: ease-out;
+	}
+	55% {
+		transform: translateX(-5px);
+		timing-function: ease-in;
+	}
+	73% {
+		transform: translateX(4px);
+		timing-function: ease-out;
+	}
+	82% {
+		transform: translateX(-4px);
+		timing-function: ease-in;
+	}
+	91% {
+		transform: translateX(2px);
+		timing-function: ease-out;
+	}
+	96% {
+		transform: translateX(-2px);
+		timing-function: ease-in;
+	}
+	100% {
+		transform: translateX(0px);
+		timing-function: ease-in;
+	}
+}
+
+.submit-error {
+	animation: bounce;
+	outline: 0;
+	border-color: red;
+	animation-name: bounce;
+	animation-duration: .5s;
+	animation-delay: 0.25s;
+}
 
 .form-line {
 	width: 478px;
 	display: flex;
+	align-items: flex-start;
 }
 
 .form-line2 {
-	padding-top: 25px;
+	padding-top: 29px;
 	padding-bottom: 29px;	
 }
 
@@ -404,7 +443,8 @@ a {
 
 .age {
 	width: 38px;
-	margin: 0px;
+	height: 36px;
+	margin:0 1px;
 	text-transform: uppercase;
 	font-weight: 700;
 	text-align: center;
@@ -428,9 +468,9 @@ a {
 
 .text {
 	background-color:#f2f2f2;
-	border: 1px solid #ffffff;
+	border: 2px solid #f2f2f2;
 	width: 290px;
-	height: 38px;
+	height: 33px;
 	text-transform: uppercase;
 	font-weight: 700;
 	padding-left: 10px;
@@ -447,8 +487,10 @@ a {
 
 .calendar {
 	border: none;
-	padding-left: 13px;
 	background-color: #f2f2f2;
+	width: 41px;
+	height: 38px;
+	
 }
 
 @keyframes crescendo {
@@ -457,7 +499,7 @@ a {
 }
 
 .submit-animation {
-	animation: crescendo 2s alternate  ease-in;
+	animation: crescendo 1.5s alternate  ease-in;
 	animation-iteration-count:3;	
 }
 
@@ -578,7 +620,6 @@ footer .visit-sedona {
 	padding-top: 36px;
 	margin-left: 6px;
 }
-
 
 .button:first-child {
 	margin-left: 0px;
@@ -721,12 +762,12 @@ footer .visit-sedona {
 	position:absolute;
 	width: 23px;
 	height: 24px;
-	background-image:url('../img/checkbox-off.svg');
+	background-image:url("../img/checkbox-off.svg");
 	margin-left:-39px;
 }
 
 .check-input:checked +.check_box {
-	background-image:url('../img/checkbox-on.svg');
+	background-image:url("../img/checkbox-on.svg");
 }
 
 .check-input:focus +.check_box {
@@ -734,11 +775,11 @@ footer .visit-sedona {
 }
 
 .check-input:disabled +.check_box {
-	background-image:url('../img/checkbox-off - desabled.svg');
+	background-image:url("../img/checkbox-off - desabled.svg");
 }
 
 .check-input:checked:disabled +.check_box {
-	background-image:url('../img/checkbox-on - desabled.svg');
+	background-image:url("../img/checkbox-on - desabled.svg");
 }
 
 .list-filters-checkboxes input[type="checkbox"]{
@@ -1025,7 +1066,7 @@ footer .visit-sedona {
 	height: 17px;
 	width: 20px;
 	display:block;
-	background-image: url(../img/star.svg);
+	background-image: url("../img/star.svg");
 	background-repeat: repeat;
 	background-repeat: space;
 	margin-bottom: 48px;
@@ -1035,11 +1076,9 @@ footer .visit-sedona {
 	width: 88px;
 }
 
-
 .stars-three {
 	width: 64px;
 }
-
 
 .stars-two {
 	width: 40px;
